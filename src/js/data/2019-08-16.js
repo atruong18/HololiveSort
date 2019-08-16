@@ -2111,7 +2111,7 @@ dataSet[dataSetVersion].characterData = [
   },
   {
     name: "Chitose Kurosaki",
-    img: "sRH9g2F.png",
+    img: "cQhyTe6.png",
     opts: {
       groups: ["cg",
         "cgv"]
@@ -2119,7 +2119,7 @@ dataSet[dataSetVersion].characterData = [
   },
   {
     name: "Chiyo Shirayuki",
-    img: "s2ogcj1.png",
+    img: "0bjAdj3.png",
     opts: {
       groups: ["cg",
         "cgv"]
@@ -2127,42 +2127,35 @@ dataSet[dataSetVersion].characterData = [
   },
   {
     name: "Akari Tsujino",
-    img: "qVkJToI.png",
+    img: "pLh6DQL.png",
     opts: {
       groups: ["cg"]
     }
   },
   {
     name: "Akira Sunazuka",
-    img: "4U0YnXs.png",
+    img: "P7mFXGB.png",
     opts: {
       groups: ["cg", "cgv"]
     }
   },
   {
     name: "Nagi Hisakawa",
-    img: "IdfMMJT.png",
+    img: "oHDoWHL.png",
     opts: {
       groups: ["cg", "cgv"]
     }
   },
   {
     name: "Hayate Hisakawa",
-    img: "ZxRPKVZ.png",
-    opts: {
-      groups: ["cg", "cgv"]
-    }
-  },
-  {
-    name: "Hayate Hisakawa",
-    img: "DzaEc6l.png",
+    img: "ZiHqks1.png",
     opts: {
       groups: ["cg", "cgv"]
     }
   },
   {
     name: "Riamu Yumemi",
-    img: "SYck98D.png",
+    img: "fQujkrC.png",
     opts: {
       groups: ["cg"]
     }
