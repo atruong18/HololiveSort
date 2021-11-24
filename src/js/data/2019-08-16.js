@@ -6,10 +6,10 @@ dataSet[dataSetVersion].options = [
     name: "Filter by Agency",
     key: "agency",
     tooltip: "Check this to restrict to certain agencies.",
-    checked: false,
+    checked: true,
     sub: [
-      { name: "Cover", key: "cover" },
-      { name: "Nijisanji", key: "niji" },
+      { name: "Cover", key: "cover", checked: true },
+      { name: "Nijisanji", key: "niji", checked: false },
     ]
   },
   {
@@ -18,6 +18,7 @@ dataSet[dataSetVersion].options = [
     tooltip: "Check this to restrict to certain groups.",
     checked: false,
     sub: [
+      // cover
       { name: "Hololive 0th Generation", key: "jp0" },
       { name: "INNK Music", key: "innk" },
       { name: "Hololive 1st Generation", key: "jp1" },
@@ -34,7 +35,24 @@ dataSet[dataSetVersion].options = [
       { name: "Hololive EN Myth", key: "en1" },
       { name: "Hololive EN HOPE", key: "hope" },
       { name: "Hololive EN Council", key: "en2" },
-      { name: "Retired Members", key: "retired" },
+      { name: "Retired Holo Members", key: "retired" },
+      // nijisanji
+      { name: "NIJISANJI EN LazuLight", key: "nijien1" },
+      { name: "NIJISANJI EN OBSYDIA", key: "nijien2" },
+      { name: "NIJISANJI EN Ethyria", key: "nijien3" },
+      { name: "NIJISANJI ID 3SetBBQ", key: "nijiid1" },
+      { name: "NIJISANJI ID CloverMcOver", key: "nijiid2" },
+      { name: "NIJISANJI ID LAN_NEE3S", key: "nijiid3" },
+      { name: "NIJISANJI ID 3FicLite", key: "nijiid4" },
+      { name: "NIJISANJI ID 53Renade", key: "nijiid5" },
+      { name: "NIJISANJI ID 6WS", key: "nijiid6" },
+      { name: "NIJISANJI KR 1", key: "nijikr1" },
+      { name: "NIJISANJI KR 2", key: "nijikr2" },
+      { name: "NIJISANJI KR 3", key: "nijikr3" },
+      { name: "NIJISANJI KR 4", key: "nijikr4" },
+      { name: "NIJISANJI KR 5", key: "nijikr5" },
+      { name: "NIJISANJI KR 6", key: "nijikr6" },
+      { name: "Oliver", key: "oliver" },
     ]
   },
 ];
@@ -536,6 +554,406 @@ dataSet[dataSetVersion].characterData = [
       groups: ["jp4", "retired"]
     }
   },
+  {
+    name: "Oliver Evans",
+    img: "https://static.wikia.nocookie.net/virtualyoutuber/images/8/8e/Oliver_Evans_Portrait.png/revision/latest/scale-to-width-down/1000?cb=20210722163908",
+    opts: {
+      agency: ["niji"],
+      groups: ["oliver"]
+    }
+  },
+  {
+    name: "Hana Macchia",
+    img: "https://static.wikia.nocookie.net/virtualyoutuber/images/e/e6/Hana_Macchia_Portrait.png/revision/latest/scale-to-width-down/1000?cb=20210325072418",
+    opts: {
+      agency: ["niji"],
+      groups: ["nijiid1"]
+    }
+  },
+  {
+    name: "ZEA Cornelia",
+    img: "https://static.wikia.nocookie.net/virtualyoutuber/images/c/c8/ZEA_Cornelia_Portrait.png/revision/latest/scale-to-width-down/1000?cb=20210325073137",
+    opts: {
+      agency: ["niji"],
+      groups: ["nijiid1"]
+    }
+  },
+  {
+    name: "Taka Radjiman",
+    img: "https://static.wikia.nocookie.net/virtualyoutuber/images/4/47/Taka_Radjiman_Portrait.png/revision/latest/scale-to-width-down/1000?cb=20210325074537",
+    opts: {
+      agency: ["niji"],
+      groups: ["nijiid1"]
+    }
+  },
+  {
+    name: "Rai Galilei",
+    img: "https://static.wikia.nocookie.net/virtualyoutuber/images/5/51/Rai_Galilei_Portrait.png/revision/latest/scale-to-width-down/1000?cb=20210326111732",
+    opts: {
+      agency: ["niji"],
+      groups: ["nijiid2"]
+    }
+  },
+  {
+    name: "Riksa Dhirendra",
+    img: "https://static.wikia.nocookie.net/virtualyoutuber/images/1/12/Riksa_Dhirendra_Portrait.png/revision/latest/scale-to-width-down/1000?cb=20210326112937",
+    opts: {
+      agency: ["niji"],
+      groups: ["nijiid2"]
+    }
+  },
+  {
+    name: "Amicia Michella",
+    img: "https://static.wikia.nocookie.net/virtualyoutuber/images/6/61/Amicia_Michella_Portrait.png/revision/latest/scale-to-width-down/1000?cb=20210327133646",
+    opts: {
+      agency: ["niji"],
+      groups: ["nijiid2"]
+    }
+  },
+  {
+    name: "Miyu Ottavia",
+    img: "https://static.wikia.nocookie.net/virtualyoutuber/images/0/01/Miyu_Ottavia_Portrait.png/revision/latest/scale-to-width-down/1000?cb=20210327134420",
+    opts: {
+      agency: ["niji"],
+      groups: ["nijiid2"]
+    }
+  },
+  {
+    name: "Azura Cecillia",
+    img: "https://static.wikia.nocookie.net/virtualyoutuber/images/3/3e/Azura_Cecillia_Portrait.png/revision/latest/scale-to-width-down/1000?cb=20210328131835",
+    opts: {
+      agency: ["niji"],
+      groups: ["nijiid3"]
+    }
+  },
+  {
+    name: "Layla Alstroemeria",
+    img: "https://static.wikia.nocookie.net/virtualyoutuber/images/6/69/Layla_Alstroemeria_Portrait.png/revision/latest/scale-to-width-down/1000?cb=20210328132927",
+    opts: {
+      agency: ["niji"],
+      groups: ["nijiid3"]
+    }
+  },
+  {
+    name: "Nara Haramaung",
+    img: "https://static.wikia.nocookie.net/virtualyoutuber/images/3/30/Nara_Haramaung_Portrait.png/revision/latest/scale-to-width-down/1000?cb=20210328133344",
+    opts: {
+      agency: ["niji"],
+      groups: ["nijiid3"]
+    }
+  },
+  {
+    name: "Etna Crimson",
+    img: "https://static.wikia.nocookie.net/virtualyoutuber/images/a/a6/Etna_Crimson_Portrait.png/revision/latest/scale-to-width-down/1000?cb=20210329095225",
+    opts: {
+      agency: ["niji"],
+      groups: ["nijiid4"]
+    }
+  },
+  {
+    name: "Bonnivier Pranaja",
+    img: "https://static.wikia.nocookie.net/virtualyoutuber/images/5/53/Bonnivier_Pranaja_Portrait.png/revision/latest/scale-to-width-down/1000?cb=20210329100805",
+    opts: {
+      agency: ["niji"],
+      groups: ["nijiid4"]
+    }
+  },
+  {
+    name: "Siska Leontyne",
+    img: "https://static.wikia.nocookie.net/virtualyoutuber/images/0/00/Siska_Leontyne_Portrait.png/revision/latest/scale-to-width-down/1000?cb=20210329101049",
+    opts: {
+      agency: ["niji"],
+      groups: ["nijiid4"]
+    }
+  },
+  {
+    name: "Nagisa Arcinia",
+    img: "https://static.wikia.nocookie.net/virtualyoutuber/images/9/93/Nagisa_Arcinia_Portrait.png/revision/latest/scale-to-width-down/1000?cb=20210330092032",
+    opts: {
+      agency: ["niji"],
+      groups: ["nijiid5"]
+    }
+  },
+  {
+    name: "Derem Kado",
+    img: "https://static.wikia.nocookie.net/virtualyoutuber/images/2/2b/Derem_Kado_Portrait.png/revision/latest/scale-to-width-down/1000?cb=20210330092406",
+    opts: {
+      agency: ["niji"],
+      groups: ["nijiid5"]
+    }
+  },
+  {
+    name: "Reza Avanluna",
+    img: "https://static.wikia.nocookie.net/virtualyoutuber/images/a/a8/Reza_Avanluna_Portrait.png/revision/latest/scale-to-width-down/1000?cb=20210330092717",
+    opts: {
+      agency: ["niji"],
+      groups: ["nijiid5"]
+    }
+  },
+  {
+    name: "Hyona Elatiora",
+    img: "https://static.wikia.nocookie.net/virtualyoutuber/images/4/44/Hyona_Elatiora_Portrait.webp/revision/latest/scale-to-width-down/564?cb=20210805050508",
+    opts: {
+      agency: ["niji"],
+      groups: ["nijiid6"]
+    }
+  },
+  {
+    name: "Xia Ekavira",
+    img: "https://static.wikia.nocookie.net/virtualyoutuber/images/a/a1/Xia_Ekavira_Portrait.webp/revision/latest/scale-to-width-down/564?cb=20210805064451",
+    opts: {
+      agency: ["niji"],
+      groups: ["nijiid6"]
+    }
+  },
+  {
+    name: "Mika Melatika",
+    img: "https://static.wikia.nocookie.net/virtualyoutuber/images/e/e8/Mika_Melatika_Portrait.webp/revision/latest/scale-to-width-down/564?cb=20210805100414",
+    opts: {
+      agency: ["niji"],
+      groups: ["nijiid6"]
+    }
+  },
+  {
+    name: "Min Suha",
+    img: "https://static.wikia.nocookie.net/virtualyoutuber/images/6/68/Min_Suha_Portrait.png/revision/latest/scale-to-width-down/1000?cb=20210324045512",
+    opts: {
+      agency: ["niji"],
+      groups: ["nijikr1"]
+    }
+  },
+  {
+    name: "Gaon",
+    img: "https://static.wikia.nocookie.net/virtualyoutuber/images/4/40/Gaon_Portrait.png/revision/latest/scale-to-width-down/1000?cb=20210324045735",
+    opts: {
+      agency: ["niji"],
+      groups: ["nijikr1"]
+    }
+  },
+  {
+    name: "Han Chiho",
+    img: "https://static.wikia.nocookie.net/virtualyoutuber/images/5/53/Han_Chiho_2nd_Portrait.png/revision/latest/scale-to-width-down/1000?cb=20210324045958",
+    opts: {
+      agency: ["niji"],
+      groups: ["nijikr1"]
+    }
+  },
+  {
+    name: "Lee Siu",
+    img: "https://static.wikia.nocookie.net/virtualyoutuber/images/b/ba/Lee_Siu_Portrait.png/revision/latest/scale-to-width-down/1000?cb=20210324050740",
+    opts: {
+      agency: ["niji"],
+      groups: ["nijikr2"]
+    }
+  },
+  {
+    name: "So Nagi",
+    img: "https://static.wikia.nocookie.net/virtualyoutuber/images/0/0a/So_Nagi_Portrait.png/revision/latest/scale-to-width-down/1000?cb=20210324050254",
+    opts: {
+      agency: ["niji"],
+      groups: ["nijikr2"]
+    }
+  },
+  {
+    name: "Chae Ara",
+    img: "https://static.wikia.nocookie.net/virtualyoutuber/images/5/54/Chae_Ara_Portrait.png/revision/latest/scale-to-width-down/1000?cb=20210324050551",
+    opts: {
+      agency: ["niji"],
+      groups: ["nijikr2"]
+    }
+  },
+  {
+    name: "Akira Ray",
+    img: "https://static.wikia.nocookie.net/virtualyoutuber/images/b/be/Akira_Ray_Portrait.png/revision/latest/scale-to-width-down/1000?cb=20210324051336",
+    opts: {
+      agency: ["niji"],
+      groups: ["nijikr3"]
+    }
+  },
+  {
+    name: "Lee Roha",
+    img: "https://static.wikia.nocookie.net/virtualyoutuber/images/4/44/Lee_Roha_Portrait.png/revision/latest/scale-to-width-down/1000?cb=20210324051554",
+    opts: {
+      agency: ["niji"],
+      groups: ["nijikr3"]
+    }
+  },
+  {
+    name: "Nun Bora",
+    img: "https://static.wikia.nocookie.net/virtualyoutuber/images/8/8d/Nun_Bora_Portrait.png/revision/latest/scale-to-width-down/1000?cb=20210324050950",
+    opts: {
+      agency: ["niji"],
+      groups: ["nijikr3"]
+    }
+  },
+  {
+    name: "Oh Jiyu",
+    img: "https://static.wikia.nocookie.net/virtualyoutuber/images/a/aa/Oh_Jiyu_Portrait.png/revision/latest/scale-to-width-down/1000?cb=20210324052443",
+    opts: {
+      agency: ["niji"],
+      groups: ["nijikr4"]
+    }
+  },
+  {
+    name: "Shin Kiru",
+    img: "https://static.wikia.nocookie.net/virtualyoutuber/images/c/cd/Shin_Kiru_Portrait.png/revision/latest/scale-to-width-down/1000?cb=20210324052245",
+    opts: {
+      agency: ["niji"],
+      groups: ["nijikr4"]
+    }
+  },
+  {
+    name: "Yang Nari",
+    img: "https://static.wikia.nocookie.net/virtualyoutuber/images/9/96/Yang_Nari_Portrait.png/revision/latest/scale-to-width-down/1000?cb=20210324051834",
+    opts: {
+      agency: ["niji"],
+      groups: ["nijikr4"]
+    }
+  },
+  {
+    name: "Ryu Hari",
+    img: "https://static.wikia.nocookie.net/virtualyoutuber/images/b/b1/Ryu_Hari_Portrait.png/revision/latest/scale-to-width-down/1000?cb=20210324052121",
+    opts: {
+      agency: ["niji"],
+      groups: ["nijikr4"]
+    }
+  },
+  {
+    name: "Seffyna",
+    img: "https://static.wikia.nocookie.net/virtualyoutuber/images/3/36/Seffyna_Portrait.png/revision/latest/scale-to-width-down/1000?cb=20210528111232",
+    opts: {
+      agency: ["niji"],
+      groups: ["nijikr5"]
+    }
+  },
+  {
+    name: "Ban Hada",
+    img: "https://static.wikia.nocookie.net/virtualyoutuber/images/c/c0/Ban_Hada_Portrait.png/revision/latest/scale-to-width-down/1000?cb=20210528111307",
+    opts: {
+      agency: ["niji"],
+      groups: ["nijikr5"]
+    }
+  },
+  {
+    name: "Song Mia",
+    img: "https://static.wikia.nocookie.net/virtualyoutuber/images/4/43/Song_Mia_Portrait.png/revision/latest/scale-to-width-down/1000?cb=20210528111326",
+    opts: {
+      agency: ["niji"],
+      groups: ["nijikr5"]
+    }
+  },
+  {
+    name: "Ko Yami",
+    img: "https://static.wikia.nocookie.net/virtualyoutuber/images/d/d3/Ko_Yami_Portrait.png/revision/latest/scale-to-width-down/1000?cb=20210923075911",
+    opts: {
+      agency: ["niji"],
+      groups: ["nijikr6"]
+    }
+  },
+  {
+    name: "Ha Yun",
+    img: "https://static.wikia.nocookie.net/virtualyoutuber/images/2/2a/Ha_Yun_Portrait.png/revision/latest/scale-to-width-down/1000?cb=20210923083812",
+    opts: {
+      agency: ["niji"],
+      groups: ["nijikr6"]
+    }
+  },
+  {
+    name: "Na Sera",
+    img: "https://static.wikia.nocookie.net/virtualyoutuber/images/a/ad/Na_Sera_Portrait.png/revision/latest/scale-to-width-down/1000?cb=20210923085212",
+    opts: {
+      agency: ["niji"],
+      groups: ["nijikr6"]
+    }
+  },
+  {
+    name: "Lee On",
+    img: "https://static.wikia.nocookie.net/virtualyoutuber/images/f/ff/Lee_On_Portrait.png/revision/latest/scale-to-width-down/1000?cb=20210923091207",
+    opts: {
+      agency: ["niji"],
+      groups: ["nijikr6"]
+    }
+  },
+  {
+    name: "Pomu Rainpuff",
+    img: "https://static.wikia.nocookie.net/virtualyoutuber/images/a/a8/Pomu_Rainpuff_Portrait.png/revision/latest/scale-to-width-down/1000?cb=20210517092410",
+    opts: {
+      agency: ["niji"],
+      groups: ["nijien1"]
+    }
+  },
+  {
+    name: "Elira Pendora",
+    img: "https://static.wikia.nocookie.net/virtualyoutuber/images/5/5b/Elira_Pendora_Portrait.png/revision/latest/scale-to-width-down/1000?cb=20210517092344",
+    opts: {
+      agency: ["niji"],
+      groups: ["nijien1"]
+    }
+  },
+  {
+    name: "Finana Ryugu",
+    img: "https://static.wikia.nocookie.net/virtualyoutuber/images/6/6f/Finana_Ryugu_Portrait.png/revision/latest/scale-to-width-down/1000?cb=20210517092433",
+    opts: {
+      agency: ["niji"],
+      groups: ["nijien1"]
+    }
+  },
+  {
+    name: "Rosemi Lovelock",
+    img: "https://static.wikia.nocookie.net/virtualyoutuber/images/c/ce/Rosemi_Lovelock_Portrait.png/revision/latest/scale-to-width-down/1000?cb=20210719061433",
+    opts: {
+      agency: ["niji"],
+      groups: ["nijien2"]
+    }
+  },
+  {
+    name: "Petra Gurin",
+    img: "https://static.wikia.nocookie.net/virtualyoutuber/images/d/d7/Petra_Gurin_Portrait.png/revision/latest/scale-to-width-down/1000?cb=20210719065217",
+    opts: {
+      agency: ["niji"],
+      groups: ["nijien2"]
+    }
+  },
+  {
+    name: "Selen Tatsuki",
+    img: "https://static.wikia.nocookie.net/virtualyoutuber/images/4/4e/Selen_Tatsuki_Portrait.png/revision/latest/scale-to-width-down/1000?cb=20210719072816",
+    opts: {
+      agency: ["niji"],
+      groups: ["nijien2"]
+    }
+  },
+  {
+    name: "Nina Kosaka",
+    img: "https://static.wikia.nocookie.net/virtualyoutuber/images/f/f6/Nina_Kosaka_Portrait.png/revision/latest/scale-to-width-down/1000?cb=20211012224605",
+    opts: {
+      agency: ["niji"],
+      groups: ["nijien3"]
+    }
+  },
+  {
+    name: "Millie Parfait",
+    img: "https://static.wikia.nocookie.net/virtualyoutuber/images/e/e6/Millie_Parfait_Portrait.png/revision/latest/scale-to-width-down/1000?cb=20211012225042",
+    opts: {
+      agency: ["niji"],
+      groups: ["nijien3"]
+    }
+  },
+  {
+    name: "Enna Alouette",
+    img: "https://static.wikia.nocookie.net/virtualyoutuber/images/f/f1/Enna_Alouette_Portrait.png/revision/latest/scale-to-width-down/1000?cb=20211012224041",
+    opts: {
+      agency: ["niji"],
+      groups: ["nijien3"]
+    }
+  },
+  {
+    name: "Reimu Endou",
+    img: "https://static.wikia.nocookie.net/virtualyoutuber/images/c/c5/Reimu_Endou_Portrait.png/revision/latest/scale-to-width-down/1000?cb=20211012225419",
+    opts: {
+      agency: ["niji"],
+      groups: ["nijien3"]
+    }
+  },
 ]
 
 /*
@@ -543,7 +961,7 @@ dataSet[dataSetVersion].characterData = [
     name: "",
     img: "",
     opts: {
-      agency: ["cover"],
+      agency: ["niji"],
       groups: [""]
     }
   },
